@@ -4,49 +4,28 @@
   <meta charset="UTF-8"/>
   <title>Product Catalog</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: system-ui, sans-serif; background: #f9f9f7; padding: 1.5rem; }
-    h1 { font-size: 18px; font-weight: 600; margin-bottom: 1.25rem; color: #1a1a18; }
-    .card { background: #fff; border: 1px solid #e5e5e0; border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
-    .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
-    .name { font-size: 14px; font-weight: 500; color: #1a1a18; }
-    .price { font-size: 14px; font-weight: 600; color: #1a1a18; }
-    .badge { font-size: 11px; color: #666; background: #f1f0e8; border: 1px solid #e5e5e0; padding: 2px 8px; border-radius: 20px; display: inline-block; }
-    .desc { font-size: 12px; color: #666; line-height: 1.5; margin: 6px 0 8px; }
-    .meta { font-size: 11px; color: #999; font-family: monospace; }
+    body { font-family: system-ui, sans-serif; padding: 1.5rem; background: #fff; }
+    h2 { font-size: 16px; margin-bottom: 1rem; padding-bottom: 8px; border-bottom: 1px solid #ddd; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { text-align: left; padding: 8px 10px; color: #888; font-weight: 500; border-bottom: 1px solid #ddd; }
+    td { padding: 9px 10px; border-bottom: 1px solid #eee; color: #222; }
+    td:last-child { text-align: right; }
+    th:last-child { text-align: right; }
   </style>
 </head>
 <body>
-  <h1>🗂️ Product Catalog</h1>
-  <div class="card">
-    <div class="card-header"><span class="name">Wireless Mouse</span><span class="price">$29.99</span></div>
-    <span class="badge">Electronics</span>
-    <p class="desc">Ergonomic wireless mouse with 2.4GHz connectivity and 12-month battery life.</p>
-    <span class="meta">P001 · Stock: 150 units</span>
-  </div>
-  <div class="card">
-    <div class="card-header"><span class="name">Mechanical Keyboard</span><span class="price">$89.99</span></div>
-    <span class="badge">Electronics</span>
-    <p class="desc">Compact TKL layout with blue switches and RGB backlighting.</p>
-    <span class="meta">P002 · Stock: 75 units</span>
-  </div>
-  <div class="card">
-    <div class="card-header"><span class="name">Running Shoes</span><span class="price">$59.99</span></div>
-    <span class="badge">Footwear</span>
-    <p class="desc">Lightweight mesh running shoes with cushioned sole, available in 6 colors.</p>
-    <span class="meta">P003 · Stock: 200 units</span>
-  </div>
-  <div class="card">
-    <div class="card-header"><span class="name">Stainless Steel Bottle</span><span class="price">$19.99</span></div>
-    <span class="badge">Kitchen</span>
-    <p class="desc">Double-wall insulated bottle, keeps drinks cold 24hrs and hot 12hrs.</p>
-    <span class="meta">P004 · Stock: 320 units</span>
-  </div>
-  <div class="card">
-    <div class="card-header"><span class="name">Notebook A5</span><span class="price">$8.49</span></div>
-    <span class="badge">Stationery</span>
-    <p class="desc">200-page ruled notebook with hardcover and bookmark ribbon.</p>
-    <span class="meta">P005 · Stock: 500 units</span>
-  </div>
+  <h2>Product Catalog</h2>
+  <table>
+    <thead>
+      <tr><th>Name</th><th>Category</th><th>Price</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Wireless Mouse</td><td>Electronics</td><td>$29.99</td></tr>
+      <tr><td>Mechanical Keyboard</td><td>Electronics</td><td>$89.99</td></tr>
+      <tr><td>Running Shoes</td><td>Footwear</td><td>$59.99</td></tr>
+      <tr><td>Stainless Steel Bottle</td><td>Kitchen</td><td>$19.99</td></tr>
+      <tr><td>Notebook A5</td><td>Stationery</td><td>$8.49</td></tr>
+    </tbody>
+  </table>
 </body>
 </html>
