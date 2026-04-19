@@ -4,24 +4,49 @@
   <meta charset="UTF-8"/>
   <title>Product Catalog</title>
   <style>
-    body { font-family: system-ui, sans-serif; padding: 2rem; background: #f9f9f7; }
-    h1 { font-size: 22px; font-weight: 500; margin-bottom: 1.5rem; }
-    table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; }
-    th { background: #1a1a18; color: #fff; padding: 12px 16px; text-align: left; font-size: 13px; }
-    td { padding: 11px 16px; font-size: 13px; border-bottom: 1px solid #eee; }
-    tr:last-child td { border-bottom: none; }
-    tr:hover td { background: #f5f5f3; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #f9f9f7; padding: 1.5rem; }
+    h1 { font-size: 18px; font-weight: 600; margin-bottom: 1.25rem; color: #1a1a18; }
+    .card { background: #fff; border: 1px solid #e5e5e0; border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+    .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .name { font-size: 14px; font-weight: 500; color: #1a1a18; }
+    .price { font-size: 14px; font-weight: 600; color: #1a1a18; }
+    .badge { font-size: 11px; color: #666; background: #f1f0e8; border: 1px solid #e5e5e0; padding: 2px 8px; border-radius: 20px; display: inline-block; }
+    .desc { font-size: 12px; color: #666; line-height: 1.5; margin: 6px 0 8px; }
+    .meta { font-size: 11px; color: #999; font-family: monospace; }
   </style>
 </head>
 <body>
-  <h1>Product Catalog</h1>
-  <table>
-    <tr><th>ID</th><th>Name</th><th>Category</th><th>Price</th><th>Stock</th><th>Description</th></tr>
-    <tr><td>P001</td><td>Wireless Mouse</td><td>Electronics</td><td>$29.99</td><td>150</td><td>Ergonomic wireless mouse with 2.4GHz connectivity and 12-month battery life.</td></tr>
-    <tr><td>P002</td><td>Mechanical Keyboard</td><td>Electronics</td><td>$89.99</td><td>75</td><td>Compact TKL layout with blue switches and RGB backlighting.</td></tr>
-    <tr><td>P003</td><td>Running Shoes</td><td>Footwear</td><td>$59.99</td><td>200</td><td>Lightweight mesh running shoes with cushioned sole, available in 6 colors.</td></tr>
-    <tr><td>P004</td><td>Stainless Steel Bottle</td><td>Kitchen</td><td>$19.99</td><td>320</td><td>Double-wall insulated bottle, keeps drinks cold 24hrs and hot 12hrs.</td></tr>
-    <tr><td>P005</td><td>Notebook A5</td><td>Stationery</td><td>$8.49</td><td>500</td><td>200-page ruled notebook with hardcover and bookmark ribbon.</td></tr>
-  </table>
+  <h1>🗂️ Product Catalog</h1>
+  <div class="card">
+    <div class="card-header"><span class="name">Wireless Mouse</span><span class="price">$29.99</span></div>
+    <span class="badge">Electronics</span>
+    <p class="desc">Ergonomic wireless mouse with 2.4GHz connectivity and 12-month battery life.</p>
+    <span class="meta">P001 · Stock: 150 units</span>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="name">Mechanical Keyboard</span><span class="price">$89.99</span></div>
+    <span class="badge">Electronics</span>
+    <p class="desc">Compact TKL layout with blue switches and RGB backlighting.</p>
+    <span class="meta">P002 · Stock: 75 units</span>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="name">Running Shoes</span><span class="price">$59.99</span></div>
+    <span class="badge">Footwear</span>
+    <p class="desc">Lightweight mesh running shoes with cushioned sole, available in 6 colors.</p>
+    <span class="meta">P003 · Stock: 200 units</span>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="name">Stainless Steel Bottle</span><span class="price">$19.99</span></div>
+    <span class="badge">Kitchen</span>
+    <p class="desc">Double-wall insulated bottle, keeps drinks cold 24hrs and hot 12hrs.</p>
+    <span class="meta">P004 · Stock: 320 units</span>
+  </div>
+  <div class="card">
+    <div class="card-header"><span class="name">Notebook A5</span><span class="price">$8.49</span></div>
+    <span class="badge">Stationery</span>
+    <p class="desc">200-page ruled notebook with hardcover and bookmark ribbon.</p>
+    <span class="meta">P005 · Stock: 500 units</span>
+  </div>
 </body>
 </html>
