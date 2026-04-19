@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+
+  <product id="P001">
+    <name>Wireless Mouse</name>
+    <category>Electronics</category>
+    <price currency="USD">29.99</price>
+    <stock>150</stock>
+    <description>Ergonomic wireless mouse with 2.4GHz connectivity and 12-month battery life.</description>
+  </product>
+
+  <product id="P002">
+    <name>Mechanical Keyboard</name>
+    <category>Electronics</category>
+    <price currency="USD">89.99</price>
+    <stock>75</stock>
+    <description>Compact TKL layout with blue switches and RGB backlighting.</description>
+  </product>
+
+  <product id="P003">
+    <name>Running Shoes</name>
+    <category>Footwear</category>
+    <price currency="USD">59.99</price>
+    <stock>200</stock>
+    <description>Lightweight mesh running shoes with cushioned sole, available in 6 colors.</description>
+  </product>
+
+  <product id="P004">
+    <name>Stainless Steel Bottle</name>
+    <category>Kitchen</category>
+    <price currency="USD">19.99</price>
+    <stock>320</stock>
+    <description>Double-wall insulated bottle, keeps drinks cold 24hrs and hot 12hrs.</description>
+  </product>
+
+  <product id="P005">
+    <name>Notebook A5</name>
+    <category>Stationery</category>
+    <price currency="USD">8.49</price>
+    <stock>500</stock>
+    <description>200-page ruled notebook with hardcover and bookmark ribbon.</description>
+  </product>
+
+</catalog>
